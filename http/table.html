@@ -4,25 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <title>响应练习</title>
-    <style>
-        table {
-            border-collapse: collapse;
-            border: 1px solid black;
-        }
-
-        td {
-            padding: 20px 40px;
-            border: 1px solid black;
-        }
-
-        table tr:nth-child(odd) {
-            background-color: #aef;
-        }
-
-        table tr:nth-child(even) {
-            background-color: #feb;
-        }
-    </style>
+    <link rel="stylesheet" href="./table.css">
 </head>
 
 <body>
@@ -43,11 +25,7 @@
             <td></td>
         </tr>
     </table>
-
-    <script>
-        const tds = document.querySelectorAll("td");
-        tds.forEach(td => td.onclick = () => td.style.background = "black");
-    </script>
+    <script src="./table.js"></script>
 </body>
 
 </html>

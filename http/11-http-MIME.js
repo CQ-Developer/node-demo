@@ -16,9 +16,20 @@ const server = http.createServer((req, res) => {
     const filePath = rootPath + pathname;
     fs.readFile(filePath, (err, data) => {
         if (err) {
-            res.statusCode = 500;
             res.setHeader("Content-Type", "text/plain");
-            res.end("请求失败");
+            switch (err.code) {
+                case "ENOENT":
+                    res.statusCode = 404;
+                    res.end("资源找不到");
+                    break;
+                case "EPERM":
+                    res.statusCode = 403;
+                    res.end("资源访问受限");
+                    break;
+                default:
+                    res.statusCode = 500;
+                    res.end("内部错误");
+            }
         } else {
             // 获取后缀名
             const extName = path.extname(filePath).substring(1);

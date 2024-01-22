@@ -1,14 +1,16 @@
 // 导入模块
-const http = require("http");
-const fs = require("fs");
+const http = require("node:http");
+const fs = require("node:fs");
+const path = require("node:path");
 
 // 创建服务
 const server = http.createServer((req, res) => {
-    const { pathname } = new URL(req.url, "http://127.0.0.1:8080");
-    const filename = __dirname + "/statics" + pathname;
-    fs.readFile(filename, (err, data) => {
+    const rootPath = path.resolve(__dirname, "statics");
+    const { pathname } = new URL(req.url, "http://127.0.0.1");
+    fs.readFile(rootPath + pathname, (err, data) => {
         if (err) {
             res.statusCode = 500;
+            res.setHeader("Content-Type", "text/plain");
             res.end("请求失败");
         } else {
             res.end(data);

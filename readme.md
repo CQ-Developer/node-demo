@@ -60,6 +60,13 @@ nrm use taobao
 # 登录发布自己的包
 npm login
 npm publish
+
+# 更新自己的包
+# 修改代码和版本号
+npm publish
+
+# 删除自己发布的依赖
+npm unpublish [--force]
 ```
 
 ## cnpm

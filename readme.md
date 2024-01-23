@@ -45,3 +45,7 @@ npm run cmd
 # 命令别名start可以直接运行
 npm start
 ```
+
+## cnpm
+
+[官网](https://npmmirror.com/)

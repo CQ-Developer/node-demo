@@ -44,6 +44,18 @@ npm run cmd
 
 # 命令别名start可以直接运行
 npm start
+
+# 查看配置
+npm config ls --json
+npm c ls
+
+# 配置淘宝镜像
+npm config set regstry https://registry.npmmirror.com
+
+# 安装 npm registry manager
+npm i -g nrm
+# 使用淘宝镜像
+nrm use taobao
 ```
 
 ## cnpm

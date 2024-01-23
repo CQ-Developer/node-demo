@@ -61,3 +61,29 @@ nrm use taobao
 ## cnpm
 
 [官网](https://npmmirror.com/)
+
+## yarn
+
+```shell
+# 初始化
+yarn init [-y]
+
+# 添加依赖
+yarn add [packages...] [--dev]
+
+# 添加全局依赖
+yarn global add [packages...]
+
+# 安装项目依赖
+yarn remove [packages...]
+
+# 删除全局依赖
+yarn global remove [packages...]
+
+# 查看全局安装的目录
+# 需要将该目录配置到环境变量才能使用全局安装的依赖
+yarn global bin
+
+# 启动package.json中定义的启动命令
+yarn cmd
+```

@@ -56,6 +56,10 @@ npm config set regstry https://registry.npmmirror.com
 npm i -g nrm
 # 使用淘宝镜像
 nrm use taobao
+
+# 登录发布自己的包
+npm login
+npm publish
 ```
 
 ## cnpm

@@ -86,4 +86,10 @@ yarn global bin
 
 # 启动package.json中定义的启动命令
 yarn cmd
+
+# 查看yarn的配置
+yarn config list
+
+# 设置淘宝镜像
+yarn config set registry https://registry.npmmirror.com [-g|--global]
 ```

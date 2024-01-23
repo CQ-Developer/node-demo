@@ -1,41 +1,30 @@
-## 初始化
-```shell
-npm init
-```
+## npm
 
-## 搜索包
 ```shell
+# 初始化
+npm init
+
+# 搜索包
+# 推荐使用网站进行搜索 https://www.npmjs.com
 npm search package
 npm s package
-```
-[推荐网站](https://www.npmjs.com)
 
-## 安装包
-```shell
+# 安装包
 npm install package
 npm i package
-```
 
-## 安装生产依赖
-```shell
-npm i -S package
+# 安装生产依赖
 npm i --save package
-```
-> 这是默认选项
+npm i -S package
 
-## 安装开发依赖
-```shell
-npm i -D package
+# 安装开发依赖
 npm i --save-dev package
-```
+npm i -D package
 
-## 全局安装
-```shell
-npm i -g package
+# 安装全局依赖
 npm i --global package
-```
+npm i -g package
 
-## 查看全局安装包位置
-```shell
-nom root -g
+# 查看全局安装位置
+npm root -g
 ```

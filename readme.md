@@ -28,3 +28,14 @@ npm i --save package
 npm i -D package
 npm i --save-dev package
 ```
+
+## 全局安装
+```shell
+npm i -g package
+npm i --global package
+```
+
+## 查看全局安装包位置
+```shell
+nom root -g
+```
